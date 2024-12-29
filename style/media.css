@@ -215,8 +215,8 @@ margin: 8px 7px 8px 7px;
     .footer_links
 }
 @media (max-width: 620px) {
-    .nav_logo{
-        margin-left: 15px;
+    .footer .nav_logo{
+        margin: 0;
     }
     .cards{
         margin-top: 15px;
