@@ -40,17 +40,21 @@
         gap: 10px;
     }
     .cards .card1_img, .cards .card2_img, .cards .card3_img, .cards .card4_img {
-        width: 300px;
-    }
-    .card2_img{
-        margin-top: 50px;
+        max-width: 300px;
+        width: 100%;
     }
     .main2_text{
         padding-bottom: 15px;
     }
+    .card2_text{
+        margin: 0 15px 52px 15px;
+    }
 }
 
 @media (max-width: 1000px) {
+    .nav_logo{
+        margin: 0;
+    }
     .nav_img{
         max-width: 1000px;
         width: 100%;
@@ -59,11 +63,11 @@
         flex-direction: column;
         gap: 10px;
     }
-    .card2_img{
-        margin-top: 50px;
-    }
     .main2_text{
         padding-bottom: 10px;
+    }
+    .card2_text{
+        margin: 0 15px 52px 15px;
     }
 }
 @media (max-width: 900px) {
@@ -108,9 +112,6 @@
     .card1, .card2, .card3, .card4{
 height: 400px;
     }
-    .card2 img{
-        margin-top: 15px;
-    }
     .card1_title{
         margin: 5px 8px 0 8px;
         text-align: left;
@@ -139,6 +140,9 @@ height: 400px;
     .footer_links{
         display: flex;
         flex-direction: column;
+    }
+    .card2_text{
+        margin: 0 15px 25px 15px;
     }
 }
 
@@ -186,10 +190,6 @@ margin: 8px 7px 8px 7px;
     .card2_img{
        margin: 0px;
     }
-    .card2_text{
-        margin-bottom: 0px;
-        font-size: 15px;
-    }
     .card4_img{
         margin-top: 0px;
     }
@@ -203,7 +203,8 @@ margin: 8px 7px 8px 7px;
         font-size: 15px;
     }
     .card2_text{
-        margin: 0 7px;
+        margin: 0 7px 10px 7px;
+        font-size: 15px;
     }
     .main2_text{
         display: -webkit-box;
@@ -220,7 +221,7 @@ margin: 8px 7px 8px 7px;
     .cards{
         margin-top: 15px;
     }
-    .card1_text, .card2_text, .card2_text, .card4_text{
+    .card1_text, .card2_text, .card3_text, .card4_text{
         font-size: 14px;
     }
     .card4_img{
@@ -257,7 +258,7 @@ margin: 8px 7px 8px 7px;
         margin: 15px 0 15px 0;
     }
     .card2_text{
-margin-bottom: 5px;
+        margin: 0 7px 18px 7px;
     }
     .card1_img{
         height: 140px;
@@ -307,6 +308,7 @@ margin-bottom: 5px;
         height: 140px;  
     }
     .card4_img{
+        height: 140px;
         margin-top: 20px;
     }
     .main_title {
@@ -343,6 +345,10 @@ font-size: 16px;
     }
 }
 @media (max-width: 400px) {
+    .close{
+        top: 5px;
+        left: 5px;
+    }
     .container{
         padding: 10px 0;
     }
@@ -353,7 +359,8 @@ font-size: 16px;
         padding: 0 10px;
     }
     .nav_links {
-        gap: 5px;
+        gap: 10px;
+        padding: 50px 20px 20px 20px;
     }
     .main_texts{
         margin: 15px;
@@ -370,6 +377,9 @@ font-size: 16px;
 }
 
 @media (max-width: 320px) {
+    .card1_text, .card2_img, .card3_img, .card4_img{
+        height: 130px;      
+    }
     .card1_title{
         font-size: 17px;
     }
@@ -385,8 +395,16 @@ font-size: 16px;
     .main2_text {
         font-size: 12px;
     }
-    .card1_img, .card2_img, .card3_img, .card4_img{
-        max-width: 287px;
-        width: 100%;
+    .card4_img{
+        margin: 20px 0 0 0;
+    }
+    .card4_text{
+        margin-top: 13px;
+    }
+    .card4_title{
+        margin-top: 10px;
+    }
+    .card2_img{
+        margin: 0;
     }
 }
